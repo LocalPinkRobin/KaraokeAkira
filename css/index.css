@@ -30,6 +30,10 @@ h1 , h2 , h3 , h4 , h5 , h6 , p , strong , em , mark , a{
     text-decoration: none;
     background-color: inherit;
 }
+input {
+    all: unset;
+  }
+
 :root{
     font-size: 100%;
     --black: black;
@@ -39,14 +43,9 @@ h1 , h2 , h3 , h4 , h5 , h6 , p , strong , em , mark , a{
 }
 
 body{
-    /* Ver qué propiedades se REPITEN a lo largo de la web
-    - Tipografía base / principal
-    - Tamaño fuente
-    */
     font-family: "Rubik", sans-serif;
 
 }
-
 .header{
     width: 100%;
     min-height: 100vh;
@@ -57,11 +56,90 @@ body{
     position: relative;
 
     justify-content: center;
+    align-items: center;
 
     background-image: url("../assets/back.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
+.header__login{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    top: 10rem;
+    background-color: var(--black) ;
+    color: var(--white);
+    width: 25rem;
+    height:30rem;
+    padding: 3rem;
+    position: absolute;
+    border: .3125rem solid var(--white);
+    z-index: 2;
+}
+.header__span{ 
+    font-size: 1.875rem ;
+    text-transform: uppercase;
+    margin: 0 0 2rem;
+    text-align: center;
+}
+.header__inputs{
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+.header__reg{
+    text-align: center;
+    margin: 1.5rem 0 0 0;
+    font-size: 1.25rem ;
+}
+.header__reg-a{
+    text-decoration: underline;
+}
+.header__reg-a:hover{
+    color: var(--red);
+}
+.header__input{
+    width: 100%;
+    padding: 1rem;
+    border: .1875rem solid var(--white);
+}
+.header__input-ini{
+    cursor: pointer;
+    display: block;
+    background-color: var(--black);
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--white);
+    width: 115%;
+    padding: 1rem;
+    border: .1875rem solid var(--white);
+}
+.header__input-ini:hover{
+    background-color: var(--white);
+    color: var(--black);
+    border: .1875rem solid var(--black);
+
+}
+@media (max-width: 650px) {
+    .header__login{
+
+        width: 80%;
+
+    }
+}
+.header__back{
+    background-color: var(--black) ;
+    opacity: 70%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+
+}
+
 .header__button{
     width: 12rem;
     padding: 0.5rem;
@@ -313,6 +391,9 @@ body{
     .vote__info{
         width: 100%;
     }
+    .vote__h2{
+        text-align: center;
+    }
 
 }
 .vote__p{
@@ -461,4 +542,8 @@ body{
         flex-flow: column nowrap;
         gap:3rem
     }
+}
+
+.disable {
+    display: none
 }
