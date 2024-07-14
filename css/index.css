@@ -243,6 +243,7 @@ body{
     gap: 1rem;
     align-items: start;
 }
+
 .salas__description{
     width: 50%;
     color: var(--white);
@@ -274,7 +275,16 @@ body{
     border: .125rem solid var(--white);
 
 }
-
+@media (max-width: 700px) {
+    .salas__info{
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: start;
+    }
+    .salas__description{
+        width: 100%;
+    }
+}
 
 .vote{
     width: 100%;
@@ -393,6 +403,9 @@ body{
     .vote__right{
         width: 100%;
     }
+   
+}
+@media (max-width: 700px) {
     .vote__item{
         flex-flow: column nowrap;
         justify-content: center;
@@ -402,9 +415,12 @@ body{
         width: 100%;
     }
     .vote__button{
-        
+        width: 50%;
+        height: 50%;
+        font-size: 90%;
     }
 }
+
 .footer{
     width: 100%;
     background: var(--black);
