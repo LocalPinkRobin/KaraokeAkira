@@ -202,7 +202,8 @@ body{
 
 .salas__h2{
     color: var(--white);
-    font-size: 2.8125rem;
+    font-size: clamp(2rem, 3vw,  2.8125rem);
+
     font-weight: 500;
     text-transform: uppercase;
 
@@ -294,6 +295,12 @@ body{
     background-color: var(--dark_grey);
     border: .0625rem solid var(--white);
     padding: 1rem;
+}
+@media (max-width: 1200px) {
+    .vote__info{
+
+        width: 100%;
+    }
 }
 .vote__p{
     color: var(--white);
