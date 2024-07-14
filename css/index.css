@@ -301,9 +301,9 @@ body{
 }
 @media (max-width: 1200px) {
     .vote__info{
-
         width: 100%;
     }
+
 }
 .vote__p{
     color: var(--white);
@@ -388,9 +388,21 @@ body{
     }
     .vote__left{
         width: 100%;
+        
     }
     .vote__right{
         width: 100%;
+    }
+    .vote__item{
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .vote__img{
+        width: 100%;
+    }
+    .vote__button{
+        
     }
 }
 .footer{
