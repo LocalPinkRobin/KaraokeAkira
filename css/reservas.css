@@ -44,6 +44,7 @@ button{
     --purple: #BE13C1;
     --blue: #5D9EDB;
     --brown: #8E4F21;
+    --blocked:#8C8C8C;
 }
 
 body{
@@ -255,7 +256,7 @@ body{
     padding: 2rem;
     display: flex;
     flex-flow: column;
-    gap: 2rem;
+    gap: 3rem;
 }
 .revervas__servicios{
     width: 100%;
@@ -270,9 +271,6 @@ body{
     display: flex;
     flex-flow: row nowrap;
     gap: 2%;
-}
-.reservas__opcion{
-    width: 60%;
 }
 
 .reservas__foto{
@@ -333,6 +331,22 @@ body{
     border: .125rem solid var(--mustard);
     color: var(--mustard);
 
+}
+.purple{
+        border: .125rem solid var(--purple);
+    color: var(--purple);
+}
+.white{
+        border: .125rem solid var(--white);
+    color: var(--white);
+}
+.blue{
+        border: .125rem solid var(--blue);
+    color: var(--blue);
+}
+.brown{
+        border: .125rem solid var(--brown);
+    color: var(--brown);
 }
 
 .reservas__button-reser:hover{
@@ -469,4 +483,8 @@ body{
 
 .disable {
     display: none
+}
+.blocked{
+    color: var(--blocked);
+    border: solid .1875rem var(--blocked);
 }
