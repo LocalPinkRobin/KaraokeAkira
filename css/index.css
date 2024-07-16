@@ -450,9 +450,6 @@ body{
     border: .125rem solid var(--white);
 }
 
-.vote__img-click{
-    cursor: pointer;
-}
 
 .vote__button{
     padding: 1rem;
