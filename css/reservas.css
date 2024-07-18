@@ -30,9 +30,14 @@ h1 , h2 , h3 , h4 , h5 , h6 , p , strong , em , mark , a{
     text-decoration: none;
     background-color: inherit;
 }
-button{
+input {
     all: unset;
 }
+
+button{
+    font-family: inherit;
+}
+
 :root{
     font-size: 100%;
     --black: black;
@@ -71,103 +76,19 @@ body{
     padding: 2rem;
 
 }
-
-.header__login{
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    top: 10rem;
-    background-color: var(--black) ;
-    color: var(--white);
-    width: 25rem;
-    padding: 3rem;
-    position: absolute;
-    border: .3125rem solid var(--white);
-    z-index: 2;
-}
-.header__span{ 
-    font-size: 1.875rem ;
-    text-transform: uppercase;
-    margin: 0 0 2rem;
-    text-align: center;
-}
-.header__inputs{
-    width: 80%;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    gap: 0.5rem;
-}
-.header__reg{
-    text-align: center;
-    margin: 1.5rem 0 0 0;
-    font-size: 1.25rem ;
-}
-.header__reg-a{
-    text-decoration: underline;
-}
-.header__reg-a:hover{
-    color: var(--red);
-}
-.header__input{
-    width: 100%;
-    padding: 1rem;
-    border: .1875rem solid var(--white);
-}
-.header__input-ini{
+.header__button-perfil{
+    width: 4.125rem;
     cursor: pointer;
-    display: block;
-    background-color: var(--black);
-    font-size: 1.25rem;
-    font-weight: 400;
-    color: var(--white);
-    width: 115%;
-    padding: 1rem;
-    border: .1875rem solid var(--white);
-}
-.header__input-ini:hover{
-    background-color: var(--white);
-    color: var(--black);
-    border: .1875rem solid var(--black);
-
-}
-@media (max-width: 650px) {
-    .header__login{
-
-        width: 80%;
-
-    }
-}
-.header__back{
-    background-color: var(--black) ;
-    opacity: 70%;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-
-
-}
-
-.header__button{
-    width: 12rem;
-    padding: 0.5rem;
-    border: .125rem solid var(--white);
-    background-color: var(--black);
-    color: var(--white);
     position: absolute;
     right: 1rem;
     top: 1rem;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: 1.25rem;
-    font-weight: 500;
     text-align: center;
+
 }
-.header__button:hover{
-    border: .125rem solid var(--black);
-    background-color: var(--white);
-    color: var(--black);
+
+.header__button-perfil:hover{
+    filter: invert(100%);
+
 }
 
 .header__h1{
@@ -191,7 +112,6 @@ body{
         margin: auto;
     }
 }
-
 
 
 .reservas{
@@ -224,18 +144,21 @@ body{
     justify-content: center;
     gap: 1rem;
     text-transform: uppercase;
-
+    background-color: var(--black);
     font-size: 1.5rem;
+    color: var(--white);
 }
 .reservas__button::before{
     content:url('../assets/calendar.svg');
     margin-top: 0.3215rem;
+
 }
 
 .reservas__button:hover{
    background-color: var(--black); 
     cursor: pointer;
     filter: invert(100%);
+
 }
 
 .services__icon{
@@ -273,11 +196,38 @@ body{
     gap: 2%;
 }
 
+.reserva__imgContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.reserva__nombreSala{
+    position: absolute;
+    font-size: clamp(2rem, 2vw,  4.5rem) ;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px rgb(0, 0, 0); 
+    text-stroke: 2px black; 
+    text-align: center;
+    word-break:break-all;
+}
+
 .reservas__foto{
-    width: 50%;
+    width: 100%;
+    height: 100%;
     border: solid .1875rem var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     object-fit: cover;
 }
+
+
 .reservas__info{
     width: 50%;
     padding: 1rem;
@@ -295,8 +245,16 @@ body{
     font-size: 1rem;
     font-weight: 500;
 }
+.header__button-perfil{
+    width: 4.125rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+
+}
 .reservas__horarios{
-    width: 60%;
+    width: 100%;
 
     display: flex;
     flex-flow: row nowrap;
@@ -310,6 +268,8 @@ body{
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    background-color: var(--black);
+
 
 }
 .reservas__button-reser{
@@ -319,8 +279,10 @@ body{
     justify-content: center;
     gap: 1rem;
     text-transform: uppercase;
-
     font-size: clamp(1rem, 2vw, 1.5rem) ;
+    font-weight: 400;
+    background-color: var(--black);
+    padding: 0.2rem 0.4rem;
 }
 .red{
     border: .125rem solid var(--red);

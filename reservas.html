@@ -9,23 +9,9 @@
 </head>
 <body>
     <header class="header">
-        <button class="header__button">
-            INICIAR SESION
-        </button>
-        
-    <form class="header__login disable" action="">
-        <span class="header__span">Inicio de sesión</span>
-        <div class="header__inputs">
-            <input class="header__input" type="text" placeholder="Correo electrónico"><br>
-            <input class="header__input" type="text" placeholder="Contraseña"><br>
-            <button class="header__input-ini"> INICIAR SESIÓN</button>
-        </div>
-
-        <span class="header__reg">¿No tienes cuenta? <a class="header__reg-a" href="">Regístrate</a></span>
-
-    </form>
-    <div class="header__back disable"></div>
-
+        <a href="./perfil.html" class="header__button-perfil">
+            <img src="./assets/perfil.svg" alt="Icono de perfil">
+        </a>
         <h1 class="header__h1">
             <a class="header__img" title="Home" href="./index.html">
                 <img class="header__img" src="./assets/logo.webp" alt="Karaoke Akira">
@@ -34,6 +20,7 @@
     </header>
 
     <section class="reservas">
+
         <div class="reservas__encabezado">
             <h2 class="reservas__h2">¡Reserva tu sala!</h2>
             <button class="reservas__button"> 
@@ -46,7 +33,11 @@
         <div class="reservas__grid">
             <div class="revervas__servicios">
                 <div class="reservas__sala">
-                    <img class="reservas__foto" src="./assets/400xJapon.webp" alt="Foto Sala Japón">
+                    <div class="reserva__imgContainer">
+                        <h3 class="reserva__nombreSala">Japón</h3>
+                        <img class="reservas__foto" src="./assets/400xJapon.webp" alt="Foto Sala Japón">
+                    </div>
+
                     <div class="reservas__info">
                         <p class="reserva__incluido">INCLUIDO</p>
                         <p class="reserva__aElegir">A elegir entre</p>
@@ -90,7 +81,10 @@
 
             <div class="revervas__servicios">
                 <div class="reservas__sala">
-                    <img class="reservas__foto" src="./assets/400xNY.webp" alt="Foto Sala Japón">
+                    <div class="reserva__imgContainer">
+                        <h3 class="reserva__nombreSala">Nueva York</h3>
+                        <img class="reservas__foto" src="./assets/400xNY.webp" alt="Foto Nueva York">
+                    </div>
                     <div class="reservas__info">
                         <p class="reserva__incluido">INCLUIDO</p>
                         <p class="reserva__aElegir">A elegir entre</p>
@@ -133,8 +127,10 @@
             </div>
             <div class="revervas__servicios">
                 <div class="reservas__sala">
-                    <img class="reservas__foto" src="./assets/400xMexico.webp" alt="Foto Sala Japón">
-                    <div class="reservas__info">
+                    <div class="reserva__imgContainer">
+                        <h3 class="reserva__nombreSala">México</h3>
+                        <img loading="lazy" class="reservas__foto" src="./assets/400xMexico.webp" alt="Foto Mexico">
+                    </div>                    <div class="reservas__info">
                         <p class="reserva__incluido">INCLUIDO</p>
                         <p class="reserva__aElegir">A elegir entre</p>
                         <p class="reserva__includedItem">· Botella de Dr Pepper (1L)</p>
@@ -176,7 +172,10 @@
             </div>
             <div class="revervas__servicios">
                 <div class="reservas__sala">
-                    <img class="reservas__foto" src="./assets/400xVip.webp" alt="Foto Sala Japón">
+                    <div class="reserva__imgContainer">
+                        <h3 class="reserva__nombreSala">Sala VIP</h3>
+                        <img loading="lazy" class="reservas__foto" src="./assets/400xVip.webp" alt="Foto Sala vip">
+                    </div>
                     <div class="reservas__info">
                         <p class="reserva__incluido">INCLUIDO</p>
                         <p class="reserva__aElegir">A elegir entre</p>
@@ -219,7 +218,10 @@
             </div>
             <div class="revervas__servicios">
                 <div class="reservas__sala">
-                    <img class="reservas__foto" src="./assets/400xVictoriano.webp" alt="Foto Sala Japón">
+                    <div class="reserva__imgContainer">
+                        <h3 class="reserva__nombreSala">Victoriano</h3>
+                        <img loading="lazy" class="reservas__foto" src="./assets/400xVictoriano.webp" alt="Foto Victoriano">
+                    </div>                    
                     <div class="reservas__info">
                         <p class="reserva__incluido">INCLUIDO</p>
                         <p class="reserva__aElegir">A elegir entre</p>
@@ -262,7 +264,10 @@
             </div>
             <div class="revervas__servicios">
                 <div class="reservas__sala">
-                    <img class="reservas__foto" src="./assets/400xTaberna.webp" alt="Foto Sala Japón">
+                    <div class="reserva__imgContainer">
+                        <h3 class="reserva__nombreSala">Taberna</h3>
+                        <img loading="lazy" class="reservas__foto" src="./assets/400xTaberna.webp" alt="Foto Taberna">
+                    </div>  
                     <div class="reservas__info">
                         <p class="reserva__incluido">INCLUIDO</p>
                         <p class="reserva__aElegir">A elegir entre</p>
@@ -311,22 +316,22 @@
 
     
     <footer class="footer">
-        <img class="footer_logo" src="./assets/logo.webp" alt="Logo Karaoke Akira">
+        <img loading="lazy" class="footer_logo" src="./assets/logo.webp" alt="Logo Karaoke Akira">
         <div class="footer__contact">
             <div class="footer__item">
-                <img class="footer__icon" src="./assets/ubi_b 2.svg" alt="Logo ubicacion">
+                <img loading="lazy" class="footer__icon" src="./assets/ubi_b 2.svg" alt="Logo ubicacion">
                 <span>Calle Pedro Antonio de Alarcón</span>
             </div>
             <div class="footer__item">
-                <img class="footer__icon" src="./assets/phone_b 2.svg" alt="Logo telefono">
+                <img loading="lazy" class="footer__icon" src="./assets/phone_b 2.svg" alt="Logo telefono">
                 <span>858 123 456</span>
             </div>
             <div class="footer__item">
-                <img class="footer__icon" src="./assets/mail_b 1.svg" alt="Logo correo">
+                <img loading="lazy" class="footer__icon" src="./assets/mail_b 1.svg" alt="Logo correo">
                 <span>KaraokeAkira@gmail.com</span>
             </div>
             <div class="footer__item">
-                <img class="footer__icon" src="./assets/instagram_B 1.svg" alt="Logo instagram">
+                <img loading="lazy" class="footer__icon" src="./assets/instagram_B 1.svg" alt="Logo instagram">
                 <span>karaokeakira</span>
             </div>
         </div>

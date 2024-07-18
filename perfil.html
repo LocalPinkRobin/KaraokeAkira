@@ -9,23 +9,6 @@
 </head>
 <body>
     <header class="header">
-        <button class="header__button">
-            INICIAR SESION
-        </button>
-            
-        <form class="header__login disable" action="">
-            <span class="header__span">Inicio de sesión</span>
-            <div class="header__inputs">
-                <input class="header__input" type="text" placeholder="Correo electrónico"><br>
-                <input class="header__input" type="text" placeholder="Contraseña"><br>
-                <button class="header__input-ini"> INICIAR SESIÓN</button>
-            </div>
-
-            <span class="header__reg">¿No tienes cuenta? <a class="header__reg-a" href="">Regístrate</a></span>
-
-        </form>
-        <div class="header__back disable"></div>
-
             <h1 class="header__h1">
                 <a class="header__img" title="Home" href="./index.html">
                     <img class="header__img" src="./assets/logo.webp" alt="Karaoke Akira">
@@ -37,17 +20,29 @@
         <div class="perfil__reservas">
             <p class="perfil__p">Bienvenido a tu perfil, KaraokeAkira@gmail.com</p>
             <h2 class="perfil__h2">MIS RESERVAS</h2>
-            <p class="perfil__p">Bienvenido a tu perfil, KaraokeAkira@gmail.com</p>
+            <div class="perfil__reserva">
+                <div class="perfil__infoReserva">
+                    <h2 class="perfil__h2">Reserva Activa</h2>
+                    <p class="perfil__p">Experiencia cultural - Japón</p>
+                    <p class="perfil__p">23 de Junio - De 20:30 a 22:30</p>
+
+
+                </div>
+                <div class="perfil__cancelReserva">
+                    <a class="perfil__buttonCancelReserv" href="./reservas.html"> Cancelar reserva</a>
+                </div>
+            </div>
+            <h2 class="perfil__h2">¿NECESITAS OTRA RESERVA? ¡NO HAY PROBLEMA!</h2>
             <a class="perfil__buttonReserv" href="./reservas.html"> RESERVA AHORA</a>
         </div>
         <div class="perfil__datos">
             <h3 class="perfil__h2">ESTABLECER DATOS PERSONALES</h3>
             <form class="perfil__form" action="">
-                <input class="perfil__input" type="text" placeholder="Correo electrónico">
-                <input class="perfil__input" type="text" placeholder="Contraseña">
+                <input class="perfil__input" type="text" placeholder="Nombre">
+                <input class="perfil__input" type="text" placeholder="Apellidos">
                 
                 <div class="perfil__lastRow">
-                    <input class="perfil__input" type="text" placeholder="Correo electrónico">
+                    <input class="perfil__input" type="text" placeholder="Teléfono">
                     <button  class="perfil__buttonReserv-guardar">Guardar</button>
                 </div>
 
@@ -55,17 +50,17 @@
             <h3 class="perfil__h2">Cambiar Contraseña</h3>
             <form class="perfil__form" action="">
 
-                <input class="perfil__input" type="text" placeholder="Correo electrónico">
-                <input class="perfil__input" type="text" placeholder="Contraseña">
+                <input class="perfil__input" type="text" placeholder="Contraseña anterior">
+                <input class="perfil__input" type="text" placeholder="Contraseña nueva">
                 
                 <div class="perfil__lastRow">
-                    <input class="perfil__input" type="text" placeholder="Correo electrónico">
+                    <input class="perfil__input" type="text" placeholder="Repetir contraseña">
                     <button  class="perfil__buttonReserv-guardar">Guardar</button>
                 </div>
             </form>
 
-            <button class="perfil__buttonReserv"> RESERVA AHORA</button>
-            <button class="perfil__buttonReserv"> Eliminar cuenta</button>
+            <button class="perfil__buttonReserv"> Cerrar sesión</button>
+            <button class="perfil__buttonReserv-eliminar"> Eliminar cuenta</button>
 
         </div>
     </section>

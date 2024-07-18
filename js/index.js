@@ -1,1 +1,6 @@
-console.log("A")
+const iniciarSesion = document.querySelector(`.header__button`)
+const iniciarSesionDentro = document.querySelector(`.header__input-ini`)
+const perfilIcon = document.querySelector(`.header__button-perfil`)
+const back = document.querySelector(`.header__back`)
+const loginMenu = document.querySelector(`.header__login`)
+const closeMenu = document.querySelector(`.header__loginClose`)
