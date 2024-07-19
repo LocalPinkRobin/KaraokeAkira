@@ -148,17 +148,32 @@ body{
     font-size: 1.5rem;
     color: var(--white);
 }
-.reservas__button::before{
-    content:url('../assets/calendar.svg');
-    margin-top: 0.3215rem;
-
-}
 
 .reservas__button:hover{
    background-color: var(--black); 
     cursor: pointer;
     filter: invert(100%);
+}
+.reservas__buttonCalendar{
+    border: .125rem solid var(--white);
+    width: 13.5rem;
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-transform: uppercase;
+    background-color: var(--black);
+    font-size: 1.5rem;
+    color: var(--white);
+}
+.reservas__buttonCalendar::-webkit-calendar-picker-indicator{
+    filter: invert(100%);
+    cursor: pointer;
 
+}
+.reservas__buttonCalendar:hover{
+    filter: invert(100%);
 }
 
 .services__icon{
@@ -269,8 +284,17 @@ body{
     align-items: center;
     padding: 1rem;
     background-color: var(--black);
-
-
+}
+.reservas__opcionBlocked{
+    width: 33.33%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--black);
+    color: var(--blocked);
+    border: solid .1875rem var(--blocked);
 }
 .reservas__button-reser{
     display: flex;
@@ -381,6 +405,9 @@ body{
     .reservas__opcion{
         width: 100%;
     }
+    .reservas__opcionBlocked{
+        width: 100%;
+    }
     .reservas__horarios{
         flex-flow: column;
         justify-content: center;
@@ -445,8 +472,4 @@ body{
 
 .disable {
     display: none
-}
-.blocked{
-    color: var(--blocked);
-    border: solid .1875rem var(--blocked);
 }

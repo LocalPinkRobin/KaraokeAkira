@@ -5,33 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karaoke Akira</title>
     <link rel="stylesheet" href="css/index.css">
-    <script src="./js/index.js" defer></script>
+    <script src="./js/inicio.js" defer></script>
 </head>
 <body>
     <header class="header">
     
-    <form class="header__login" action="">
+    <form class="header__login open" action="">
         <a href="./index.html">
-            <img class="header__loginClose" src="./assets/x-lg.svg" alt="">
+            <img class="header__loginClose" src="./assets/x-lg.svg" alt="cerrar">
         </a>
         <span class="header__span">Inicio de sesión</span>
-        <span class="header__span disable">Registro</span>
         <div class="header__inputs">
             <input class="header__input" type="text" placeholder="Correo electrónico"><br>
             <input class="header__input" type="password" placeholder="Contraseña"><br>
-            <input class="header__input disable" type="password" placeholder="Repetir Contraseña"><br>
             <a href="./reservas.html" class="header__input-ini"> INICIAR SESIÓN</a>
-            <a href="./reservas.html" class="header__input-ini disable"> Registrarse</a>
         </div>
         
         <span class="header__reg">¿No tienes cuenta? </span>
-        <button class="header__reg-a" href="">Regístrate</button>
+        <button type="button" class="header__reg-a">Regístrate</button>
 
+    </form>
+    <form class="header__register" action="">
+        <a href="./index.html">
+            <img class="header__loginClose" src="./assets/x-lg.svg" alt="cerrar">
+        </a>
+        <span class="header__span">Registro</span>
+        <div class="header__inputs">
+            <input class="header__input" type="text" placeholder="Correo electrónico"><br>
+            <input class="header__input" type="password" placeholder="Contraseña"><br>
+            <input class="header__input " type="password" placeholder="Repetir Contraseña"><br>
+            <a href="./reservas.html" class="header__input-ini"> Registrarse</a>
+        </div>
+
+        <span class="header__reg">¿Ya tienes cuenta? </span>
+        <button type="button" class="header__reg-a">Iniciar sesión</button>
+    
     </form>
     <div class="header__back"></div>
 
         <h1 class="header__h1">
-            <img class="header__img" src="./assets/logo.webp" alt="Karaoke Akira">
+            <img src="./assets/logo.webp" alt="Karaoke Akira">
         </h1>
     </header>
 

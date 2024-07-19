@@ -80,7 +80,7 @@ body{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    top: 10rem;
+    top: 12rem;
     background-color: var(--black) ;
     color: var(--white);
     width: 25rem;
@@ -88,7 +88,38 @@ body{
     position: absolute;
     border: .3125rem solid var(--white);
     z-index: 2;
+    opacity: 0;
+    transition: opacity ease 1s;
+    transition: top ease 0.5s;
 }
+
+
+.header__register{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    top: 12rem;
+    background-color: var(--black) ;
+    color: var(--white);
+    width: 25rem;
+    padding: 5rem 3rem 3rem;
+    position: absolute;
+    border: .3125rem solid var(--white);
+    pointer-events: none;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity ease 1s;
+    transition: top ease 0.5s;
+
+}
+
+.open{
+    pointer-events: all;
+    opacity: 100%;
+    top: 10rem;
+
+}
+
 .header__span{ 
     font-size: 1.875rem ;
     text-transform: uppercase;
@@ -200,6 +231,15 @@ body{
     margin: auto;
 }
 
+.header__img{
+    position: relative;
+    top: 0;
+    opacity: 100%;
+    animation-name: img;
+    animation-duration: 1s;
+}
+
+
 .services{
     width: 100%;
     background: linear-gradient(#960000, #640000);
@@ -255,11 +295,16 @@ body{
 .services__square{
     background-color: var(--black);
     border: 5px solid var(--white);
+    position: relative;
     height: 15.3125rem;
     width: 15.3125rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    top: 0;
+    animation-name: img;
+    animation-duration: 1s;
+
 }
 .services__img-nota{
     height: 9rem;
@@ -452,12 +497,46 @@ body{
 }
 
 .vote__gallery{
+    position: relative;
     display: flex;
     flex-flow: row nowrap;
     gap: 2rem;
     justify-content: center;
     align-items: center;
 }
+
+.vote__popup{
+    margin: auto;
+    padding: 3rem;
+    font-size: clamp(1rem, 3vw,  2rem);
+    text-align: center;
+    width: 70%;
+    display: flex;
+    gap: 2rem;
+    text-transform: uppercase;
+    opacity: 0;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border: .1875rem solid var(--white);
+    background-color: var(--black);
+    color: var(--white);
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+    transition: opacity ease 0.3s;
+}
+.isVisible{
+    pointer-events: all;
+    opacity: 100%;
+}
+
+.vote__yes-no{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 3rem;
+}
+
 .vote__left{
     width: 50%;
     display: flex;
@@ -486,7 +565,35 @@ body{
     border: .125rem solid var(--white);
 }
 
+.vote__button-yes-no{
+    padding: 1rem;
+    border: .125rem solid var(--white);
+    background-color: var(--black);
+    color: var(--white);
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.875rem;
+    font-weight: 500;
+    height: 10%;
+    text-transform: uppercase;
+    width: 10rem;
+}
+.vote__button-yes-no:hover{
+    border: .125rem solid var(--black);
+        background-color: var(--white);
+    color: var(--black);
+}
+@media (max-width: 800px) {
+    .vote__yes-no{
+        flex-flow: column nowrap;
+        width: 100%
+    }
+    .vote__button-yes-no{
 
+        width: 100%;
+    }
+}
 .vote__button{
     padding: 1rem;
     border: .125rem solid var(--white);
@@ -574,6 +681,17 @@ body{
     .footer{
         flex-flow: column nowrap;
         gap:3rem
+    }
+}
+@keyframes img {
+    from {
+        opacity: 0%;      
+        top: 6.25rem;      
+    }
+    to {
+        opacity: 100%;
+        top: 0;
+
     }
 }
 

@@ -106,6 +106,9 @@ body{
 .perfil__cancelReserva{
     width: 50%;
 }
+.perfil__cancelReserva:hover{
+    cursor: pointer;
+}
 
 .perfil__reservas{
     width: 50%;

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karaoke Akira</title>
     <link rel="stylesheet" href="css/perfil.css">
-    <script src="./js/index.js" defer></script>
+    <script src="./js/perfil.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -26,10 +26,20 @@
                     <p class="perfil__p">Experiencia cultural - Japón</p>
                     <p class="perfil__p">23 de Junio - De 20:30 a 22:30</p>
 
+                </div>
+                <div class="perfil__cancelReserva">
+                    <button type="button" class="perfil__buttonCancelReserv" href="./reservas.html"> Cancelar reserva</button>
+                </div>
+            </div>
+            <div class="perfil__reserva">
+                <div class="perfil__infoReserva">
+                    <h2 class="perfil__h2">Reserva Activa</h2>
+                    <p class="perfil__p">Experiencia cultural - Mexico</p>
+                    <p class="perfil__p">14 de Agosto - De 20:30 a 22:30</p>
 
                 </div>
                 <div class="perfil__cancelReserva">
-                    <a class="perfil__buttonCancelReserv" href="./reservas.html"> Cancelar reserva</a>
+                    <button type="button" class="perfil__buttonCancelReserv" href="./reservas.html"> Cancelar reserva</button>
                 </div>
             </div>
             <h2 class="perfil__h2">¿NECESITAS OTRA RESERVA? ¡NO HAY PROBLEMA!</h2>
@@ -43,7 +53,7 @@
                 
                 <div class="perfil__lastRow">
                     <input class="perfil__input" type="text" placeholder="Teléfono">
-                    <button  class="perfil__buttonReserv-guardar">Guardar</button>
+                    <button type="button"  class="perfil__buttonReserv-guardar">Guardar</button>
                 </div>
 
             </form>
@@ -55,12 +65,12 @@
                 
                 <div class="perfil__lastRow">
                     <input class="perfil__input" type="text" placeholder="Repetir contraseña">
-                    <button  class="perfil__buttonReserv-guardar">Guardar</button>
+                    <button type="button" class="perfil__buttonReserv-guardar">Guardar</button>
                 </div>
             </form>
 
-            <button class="perfil__buttonReserv"> Cerrar sesión</button>
-            <button class="perfil__buttonReserv-eliminar"> Eliminar cuenta</button>
+            <a href="./index.html" class="perfil__buttonReserv"> Cerrar sesión</a>
+            <a href="./index.html" class="perfil__buttonReserv-eliminar"> Eliminar cuenta</a>
 
         </div>
     </section>
