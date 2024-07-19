@@ -175,11 +175,11 @@ body{
 
 }
 @media (max-width: 650px) {
-    .header__login{
-
+    .header__login, .header__register {
         width: 80%;
-
+        top: 2rem;
     }
+
 }
 .header__back{
     background-color: var(--black) ;
