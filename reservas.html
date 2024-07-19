@@ -3,7 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
     <title>Karaoke Akira</title>
+    <meta name="title" content="Karaoke Akira" />
+    <meta name="description" content="Karaoke Akira" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://localpinkrobin.github.io/KaraokeAkira/index.html" />
+    <meta property="og:title" content="Karaoke Akira" />
+    <meta property="og:description" content="KaraokeAkira" />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://localpinkrobin.github.io/KaraokeAkira/index.html" />
+    <meta property="twitter:title" content="Karaoke Akira" />
+    <meta property="twitter:description" content="KaraokeAkira" />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
     <link rel="stylesheet" href="css/reservas.css">
     <script src="./js/reservas.js" defer></script>
 </head>
@@ -23,7 +42,10 @@
 
         <div class="reservas__encabezado">
             <h2 class="reservas__h2">¡Reserva tu sala!</h2>
-            <input type="date" class="reservas__buttonCalendar"  max="2024-12-31"> 
+            <label >
+                Selecciona tu fecha
+                <input name="calendar" type="date" class="reservas__buttonCalendar"  max="2024-12-31"> 
+            </label>
         </div>
         <p class="reservas__p">Recuerda que nuiestras salas son completamente privadas</p>
 
