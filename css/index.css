@@ -76,6 +76,7 @@ body{
     cursor: pointer;
     filter: invert(100%);
 }
+
 .header__login{
     display: flex;
     flex-flow: column nowrap;
@@ -155,6 +156,7 @@ body{
     padding: 1rem;
     border: .1875rem solid var(--white);
 }
+
 .header__input-ini{
     cursor: pointer;
     display: block;

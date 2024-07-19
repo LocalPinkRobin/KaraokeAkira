@@ -26,7 +26,15 @@
     <link rel="stylesheet" href="css/reservas.css">
     <script src="./js/reservas.js" defer></script>
 </head>
+
+    <!-- Página dedicada a la reserva de salas del karaoke
+        Muestra las salas disponibles y qué incluye cada una
+
+    -->
+
 <body>
+        <!-- Header compuesto por el logo del local y un pequeño icon en la esquina indicando el perfil del usuario -->
+
     <header class="header">
         <a href="./perfil.html" class="header__button-perfil">
             <img src="./assets/perfil.svg" alt="Icono de perfil">
@@ -38,18 +46,36 @@
         </h1>
     </header>
 
+    <!-- Galería de reservas -->
     <section class="reservas">
 
         <div class="reservas__encabezado">
             <h2 class="reservas__h2">¡Reserva tu sala!</h2>
+                <!-- Input calendario para seleccionar el día de la reserva
+                    actualizado en tiempo real con javascript 
+                -->
+
             <label >
                 Selecciona tu fecha
                 <input name="calendar" type="date" class="reservas__buttonCalendar"  max="2024-12-31"> 
             </label>
         </div>
-        <p class="reservas__p">Recuerda que nuiestras salas son completamente privadas</p>
+        <p class="reservas__p">Recuerda que nuestras salas son completamente privadas</p>
+
+
+            <!-- GALERIA -->
+                 <!--  Se trata de seis filas con 2 columnas cada una:
+                   Fila 1: Foto y servicios incluidos
+                   Fila 2: Bloques informativos y botón de reserva
+                   
+                   
+                   Por cada bloque hay realmente 2 bloques: El informativo que está activo, y el que indica que una sala ha sido ya reservada
+                   El cambio se hace mediante javaScript al pulsar el botón de reserva
+                   -->
+
 
         <div class="reservas__grid">
+                <!-- Servicio 1: Japon -->
             <div class="revervas__servicios">
                 <div class="reservas__sala">
                     <div class="reserva__imgContainer">
@@ -97,6 +123,7 @@
                     </div>
                 </div>
             </div>
+                <!-- Servicio 2: Nueva York -->
 
             <div class="revervas__servicios">
                 <div class="reservas__sala">
@@ -144,6 +171,8 @@
                     </div>
                 </div>
             </div>
+                            <!-- Servicio 3: México -->
+
             <div class="revervas__servicios">
                 <div class="reservas__sala">
                     <div class="reserva__imgContainer">
@@ -189,6 +218,8 @@
                     </div>
                 </div>
             </div>
+            <!-- Servicio 4: Sala VIP -->
+
             <div class="revervas__servicios">
                 <div class="reservas__sala">
                     <div class="reserva__imgContainer">
@@ -235,6 +266,8 @@
                     </div>
                 </div>
             </div>
+            <!-- Servicio 5: Victoriano -->
+
             <div class="revervas__servicios">
                 <div class="reservas__sala">
                     <div class="reserva__imgContainer">
@@ -281,6 +314,8 @@
                     </div>
                 </div>
             </div>
+            <!-- Servicio 6: Taberna -->
+
             <div class="revervas__servicios">
                 <div class="reservas__sala">
                     <div class="reserva__imgContainer">
@@ -333,6 +368,11 @@
 
     </section>
 
+<!-- Footer compuesto por tres columnas
+     - Logo
+     - Información del local
+     - Políticas
+-->
     
     <footer class="footer">
         <img loading="lazy" class="footer_logo" src="./assets/logo.webp" alt="Logo Karaoke Akira">

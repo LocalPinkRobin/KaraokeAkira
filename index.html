@@ -26,7 +26,18 @@
     <link rel="stylesheet" href="css/index.css">
     <script src="./js/index.js" defer></script>
 </head>
+<!-- Este archivo HTML tiene la página principal del sitio web
+    Estructura general:
+    - Header
+    - Servicios
+    - Salas disponibles
+    - Votacion
+    - Footer
+-->
 <body>
+    <!-- 
+    Header de la web con un inicio de sesión y logo del local
+-->
     <header class="header">
         <a href="./inicioSesion.html" class="header__button">
             INICIAR SESION
@@ -35,6 +46,10 @@
             <img class="header__img" src="./assets/logo.webp" alt="Karaoke Akira">
         </h1>
     </header>
+
+    <!-- 
+    Bloque informativo de servicios que contiene el Karaoke con un botón para ir a reservas
+-->
 
     <section class="services">
         <h2 class="services__h2"> Experimenta el karaoke en Granada como nunca antes</h2>
@@ -64,7 +79,10 @@
         <p class="services__info">DISFRUTA EN UNA DE NUESTRAS SEIS SALAS PRIVADAS EXCLUSIVAS</p>
         <a class="services__button" href="./inicioSesion.html">RESERVAR</a>
     </section>
-
+<!-- 
+    Galería demostrativa de las salas disponibles en el local
+    Contiene secciones compuestas por una imagen, descripción y un botón de reserva
+-->
     <section class="salas">
         <h2 class="salas__h2"> Experiencias culturales </h2>
         <div class="salas__gallery">
@@ -131,6 +149,12 @@
         </div>
     </section>
 
+    <!-- 
+    Sección de votación
+    Explicación del sistema de rotación de salas por votación
+    A la derecha se mostrará la imagen de la nueva sala y a la izquierda una votación para saber cuál será sustituida por la nueva
+-->
+
     <section class="vote">
         <h2 class="vote__h2">¿Quieres ganar una experiencia gratuita?</h2>
         <div class="vote__info">
@@ -186,6 +210,12 @@
             </div>
 
     </section>
+
+<!-- Footer compuesto por tres columnas
+     - Logo
+     - Información del local
+     - Políticas
+-->
     
     <footer class="footer">
         <img loading="lazy" class="footer_logo" src="./assets/logo.webp" alt="Logo Karaoke Akira">

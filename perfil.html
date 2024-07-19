@@ -27,6 +27,8 @@
     <script src="./js/perfil.js" defer></script>
 </head>
 <body>
+            <!-- Header compuesto por el logo del local -->
+
     <header class="header">
             <h1 class="header__h1">
                 <a class="header__img" title="Home" href="./index.html">
@@ -35,7 +37,10 @@
             </h1>
     </header>
 
+            <!-- Un solo section que compone todo lo relativo al perfil en dos columnas: Reservas y edición -->
     <section class="perfil">
+                    <!-- Lista de reservas con su información y un botón para cancelar la reserva (Eliminación mediante JavaScript) -->
+
         <div class="perfil__reservas">
             <p class="perfil__p">Bienvenido a tu perfil, KaraokeAkira@gmail.com</p>
             <h2 class="perfil__h2">MIS RESERVAS</h2>
@@ -46,6 +51,8 @@
                     <p class="perfil__p">23 de Junio - De 20:30 a 22:30</p>
 
                 </div>
+                    <!-- Botoncillo para hacer más reservas -->
+
                 <div class="perfil__cancelReserva">
                     <button type="button" class="perfil__buttonCancelReserv"> Cancelar reserva</button>
                 </div>
@@ -65,7 +72,11 @@
             <a class="perfil__buttonReserv" href="./reservas.html"> RESERVA AHORA</a>
         </div>
         <div class="perfil__datos">
+            <!-- Bloque para editar los datos de perfil -->
+
             <h3 class="perfil__h2">ESTABLECER DATOS PERSONALES</h3>
+                <!-- Formulario de actualización de datos de perfil -->
+
             <form class="perfil__form" >
                 <input class="perfil__input" type="text" placeholder="Nombre">
                 <input class="perfil__input" type="text" placeholder="Apellidos">
@@ -78,7 +89,7 @@
             </form>
             <h3 class="perfil__h2">Cambiar Contraseña</h3>
             <form class="perfil__form" >
-
+                <!-- Formulario de actualización de contraseña del perfil -->
                 <input class="perfil__input" type="text" placeholder="Contraseña anterior">
                 <input class="perfil__input" type="text" placeholder="Contraseña nueva">
                 
@@ -94,7 +105,11 @@
         </div>
     </section>
 
-    
+    <!-- Footer compuesto por tres columnas
+     - Logo
+     - Información del local
+     - Políticas
+-->
     <footer class="footer">
         <img class="footer_logo" src="./assets/logo.webp" alt="Logo Karaoke Akira">
         <div class="footer__contact">
