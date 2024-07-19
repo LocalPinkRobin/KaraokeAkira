@@ -566,6 +566,10 @@ body{
 }
 
 .vote__button-yes-no{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
     border: .125rem solid var(--white);
     background-color: var(--black);
